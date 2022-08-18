@@ -48,3 +48,17 @@ Que alivia o sentimento da dor
 A maior expressão de liberdade que eu ja vivi na vida...
 
 Ritmo ritual e responsa rá Charlie Brown!
+
+
+
+PALETA DE CORES:
+
+cor-1 : #625344
+cor-2 : #7E4435
+cor-3 : #530D0E
+
+FONTES:
+
+font-padrao : Georgia
+font-destaque : the-battle-continuez.regular.ttf
+font-opcional : rockstar-extrabold.otf
