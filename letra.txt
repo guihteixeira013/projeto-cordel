@@ -59,6 +59,6 @@ cor-3 : #530D0E
 
 FONTES:
 
-font-padrao : Georgia
-font-destaque : the-battle-continuez.regular.ttf
-font-opcional : rockstar-extrabold.otf
+font-default : Georgia
+font-emphasis : the-battle-continuez.regular.ttf
+font-optional : rockstar-extrabold.otf
