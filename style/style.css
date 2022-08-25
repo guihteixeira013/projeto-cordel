@@ -1,21 +1,63 @@
 @charset "UTF-8";
 
-font-default : Georgia
-font-emphasis : the-battle-continuez.regular.ttf
-font-optional : rockstar-extrabold.otf
-
 @font-face {
     font-family: 'Rockstar';
     src: url('../fonts/Rockstar-ExtraBold.otf') format('opentype');
+    font-weight: normal;
 }
 
-/*root{
-    --font-default : Georgia, serif;
-    --font-emphasis : 'TheBattleContinuez';
-    --font-optional : 'Rockstar' sans-serif;
-}*/
+@font-face {
+    font-family: 'TheBattleContinuez';
+    src: url('../fonts/the-battle-continuez-regular.ttf') format('truetype');
+    font-weight: normal;
+}
 
-body {
-    font-family: 'Rockstar', Helvetica, sans-serif;
-    
+:root{ /*CSS VARIABLES*/
+    --font-default : Georgia, 'Times New Roman', Times, serif;
+    --font-emphasis :  'TheBattleContinuez', Impact, serif;
+    --font-optional : 'Rockstar', arial, sans-serif;
+
+    --color-1 : #625344;
+    --color-2 : #7E4435;
+    --color-3 : #530D0E;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+
+header {
+    background-color: var(--color-3);
+}
+
+header h1 {
+    font-family: var(--font-emphasis);
+    font-size: 5em;
+}
+
+header p {
+    font-family: var(--font-optional);
+    font-size: 0.9em;
+}
+
+header p a {
+    font-size: 1.2em;
+}
+
+header p a:hover {
+    color: var(--color-1);
+}
+
+main {
+    background-color: var(--color-1);
+    font-family: var(--font-default);
+    font-size: 1em;
+}
+
+footer {
+    background-color: var(--color-3);
+    font-family: var(--font-optional);
+    font-size: 0.8em;
 }
