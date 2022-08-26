@@ -18,7 +18,7 @@
     --font-optional : 'Rockstar', arial, sans-serif;
 
     --color-1 : #625344;
-    --color-2 : #7E4435;
+    --color-2 : #7e44355e;
     --color-3 : #530D0E;
 }
 
@@ -28,36 +28,91 @@
     color: white;
 }
 
+body {
+    background-color: var(--color-1);
+}
+
+body a:hover {
+    color: var(--color-1);
+}
+
+body a:active {
+    color: var(--color-1);
+}
+
+.container {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 20px;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 10%;
+}
+
+#first-img {
+    background-color: var(--color-2);
+    background-image: url("../images/pexels-vishnu-r-nair-medium.jpg");
+}
+
+#first-img p{
+    background-color: var(--color-2);
+    margin-top: 30%;
+    margin-left: -10px;
+    padding: 10px;
+}
+
+#second-img {
+    background-color: var(--color-2);
+    background-image: url("../images/pexels-arthouse-studio-medium.jpg");
+}
+
+#second-img p {
+    background-color: var(--color-2);
+    margin-top: 3%;
+    margin-left: -10px;
+    padding: 10px;
+}
+
 header {
     background-color: var(--color-3);
+    padding: 40px;
 }
 
 header h1 {
     font-family: var(--font-emphasis);
-    font-size: 5em;
+    font-size: 4.5em;
+    padding: auto;
+    text-align: center;
 }
 
 header p {
     font-family: var(--font-optional);
     font-size: 0.9em;
+    
 }
 
 header p a {
     font-size: 1.2em;
 }
 
-header p a:hover {
-    color: var(--color-1);
-}
-
 main {
-    background-color: var(--color-1);
     font-family: var(--font-default);
     font-size: 1em;
+    font-weight: 600;
+    padding: 20px;
+}
+
+main article p {
+    line-height: 2.5em;
+    text-align: justify;
+    max-width: 350px;
 }
 
 footer {
+    padding: 10px;
     background-color: var(--color-3);
     font-family: var(--font-optional);
     font-size: 0.8em;
+    text-align: center;
 }
