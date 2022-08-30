@@ -13,7 +13,7 @@
 }
 
 :root{ /*CSS VARIABLES*/
-    --font-default : Georgia, 'Times New Roman', Times, serif;
+    --font-default : Arial, Helvetica, sans-serif;
     --font-emphasis :  'TheBattleContinuez', Impact, serif;
     --font-optional : 'Rockstar', arial, sans-serif;
 
@@ -81,30 +81,30 @@ header {
 
 header h1 {
     font-family: var(--font-emphasis);
-    font-size: 4.5em;
+    font-size: 4em;
     padding: auto;
     text-align: center;
 }
 
 header p {
     font-family: var(--font-optional);
-    font-size: 0.9em;
+    font-size: 0.7em;
     
 }
 
 header p a {
-    font-size: 1.2em;
+    font-size: 1.25em;
 }
 
 main {
     font-family: var(--font-default);
-    font-size: 1em;
+    font-size: 0.7em;
     font-weight: 600;
     padding: 20px;
 }
 
 main article p {
-    line-height: 2.5em;
+    line-height: 1.5em;
     text-align: justify;
     max-width: 350px;
 }
