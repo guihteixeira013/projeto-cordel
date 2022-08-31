@@ -28,69 +28,42 @@
     color: white;
 }
 
-body {
-    background-color: var(--color-1);
+html, body {
+    background-color: gray;
+    min-width: 100%;
 }
 
-body a:hover {
+header a, footer a {
+    text-decoration: none;
+}
+
+header a:hover, footer a:hover {
     color: var(--color-1);
+    text-decoration: underline;
 }
 
-body a:active {
+header a:active, header a:active {
     color: var(--color-1);
-}
-
-.container {
-    margin-left: -20px;
-    margin-right: -20px;
-    padding: 20px;
-    height: 100vh;
-    background-size: cover;
-    background-attachment: fixed;
-    margin-top: 10%;
-}
-
-#first-img {
-    background-color: var(--color-2);
-    background-image: url("../images/pexels-vishnu-r-nair-medium.jpg");
-}
-
-#first-img p{
-    background-color: var(--color-2);
-    margin-left: -10px;
-    padding: 10px;
-}
-
-#second-img {
-    background-color: var(--color-2);
-    background-image: url("../images/pexels-arthouse-studio-medium.jpg");
-}
-
-#second-img p {
-    background-color: var(--color-2);
-    margin-left: -10px;
-    padding: 10px;
 }
 
 header {
     background-color: var(--color-3);
-    padding: 40px;
-}
-
-header h1 {
-    font-family: var(--font-emphasis);
-    font-size: 4em;
-    padding: auto;
+    padding-top: 40px;
     text-align: center;
 }
 
-header p {
-    font-family: var(--font-optional);
-    font-size: 0.7em;
-    
+header > h1 {
+    font-family: var(--font-emphasis);
+    font-size: 4em;
 }
 
-header p a {
+header > p {
+    font-family: var(--font-optional);
+    font-size: 0.7em;
+    padding-bottom: 40px;
+}
+
+header > p > a {
     font-size: 1.25em;
 }
 
@@ -98,13 +71,26 @@ main {
     font-family: var(--font-default);
     font-size: 0.7em;
     font-weight: 600;
-    padding: 20px;
 }
 
-main article p {
+section {
     line-height: 1.5em;
-    text-align: justify;
-    max-width: 350px;
+    padding-bottom: 10vh;
+    padding-left: 10px;
+    padding-top: 10vh;
+}
+
+section.normal {
+    background-color: var(--color-1);
+}
+
+section.image {
+    background-color: var(--color-3);
+}
+
+section.image > p {
+    background-color: rgba(0, 0, 0, 0.418);
+    max-width: 400px;
 }
 
 footer {
