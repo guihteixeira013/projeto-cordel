@@ -26,8 +26,7 @@
     color: white;
     font-size: 1em;
     margin: 0px;
-    padding: 0px;
-    
+    padding: 0px;   
 }
 
 html, body {
@@ -75,11 +74,26 @@ main {
     font-weight: 600;
 }
 
+aside {
+    background-color: black
+}
+
+aside > iframe{
+    display: block;
+    margin: auto;
+    max-width: 96.2vw;
+}
+
 section {
+    height: 50vh;
     line-height: 1.5em;
     padding-bottom: 10vh;
     padding-left: 10px;
     padding-top: 10vh;
+}
+
+section > p {
+    padding-bottom: 10px;
 }
 
 section.normal {
@@ -87,12 +101,26 @@ section.normal {
 }
 
 section.image {
+    background-attachment: fixed;
     background-color: var(--color-3);
+    background-position: center center;
+    box-shadow: inset 0px 0px 17px -5px black;
 }
 
 section.image > p {
     background-color: rgba(0, 0, 0, 0.418);
+    text-shadow: 1px 1px 2px black;
     display: inline-block;
+    padding: 0px 5px 0px 5px;
+
+}
+
+section#img01 {
+    background-image: url("../images/pexels-vishnu-r-nair-medium.jpg");
+}
+
+section#img02 {
+    background-image: url("../images/pexels-arthouse-studio-medium.jpg");
 }
 
 footer {
