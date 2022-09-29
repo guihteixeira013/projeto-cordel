@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/* Print Version */
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: normal;
+    color: black;
+}
+
+footer { display: none; }
