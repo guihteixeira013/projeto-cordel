@@ -70,7 +70,7 @@ header > p > a {
 
 main {
     font-family: var(--font-default);
-    font-size: 1em;
+    font-size: 3vh;
     font-weight: 600;
 }
 
